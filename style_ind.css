@@ -1,44 +1,34 @@
 body{
     background-color: FEF2E9;
 }
-header{
-    position: absolute;
-    width: 1440px;
-    height: 860px;
-    background-image: url("work1.jpg");
-}
-header h1{
-    position: absolute;
-    font-family: 'Inria Serif';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 67px;
-    line-height: 80px;
+header {
+    width: 64em;
+    height: 43em; /* Висота розділу "header" буде становити 60% від висоти екрану */
+    background-image: url("picture/work1.jpg");
+    background-size: cover; /* Забезпечить адаптивний розмір фонового зображення */
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-}
-header .formButt{
-    position: absolute;
-    width: 89px;
-    height: 26px;
-    background-color: transparent;
-    border: 2px solid black;
-    cursor: pointer;
-    transition: border-color 0.3s;  
-}
-header .formButt:hover{
-    border-color: white;
-}
-h2{
-    position: absolute;
+  }
+  
+  header h1 {
     font-family: 'Inria Serif';
     font-style: normal;
-    font-weight: 400;
-    font-size: 58px;
-    line-height: 70px;
+    font-weight: bold;
+    font-size: 3.35em; /* Замість пікселів, використовуйте рем або em для адаптивного розміру */
+    color: #FFFFFF;
+  }
+  
+  header .formButt {
+    width: 6em;
+  }  
+h2{
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.25em;
+    line-height: 3.5em;
     display: flex;
     align-items: center;
     text-align: center;
@@ -47,160 +37,113 @@ h2{
     color: #986A41;
 }
 p{
-    position: absolute;
     font-family: 'Inria Serif';
     font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 50px;
+    font-weight: normal;
+    font-size: 2.1em;
+    line-height: 2.5em;
 
     color: #000000;
 }
 #blok1{
-    position: absolute;
-    left: 50%;
-    right: 4.31%;
-    top: 16.09%;
-    bottom: 74.89%;
-
-    background-image: url("work2.jpg");
-
+    position: relative;
 }
-#blok1 p{
+#text1{
     position: absolute;
-    width: 622px;
-    height: 449px;
-    left: 59px;
-    top: 1047px;
+    left: 2.55em;
+    top: 54.05em;
     text-align: left;
 }
-#blok2 p{
+#artist{
     position: absolute;
-    width: 662px;
-    height: 450px;
-    left: 716px;
-    top: 2114px;
+    width: 27.2em;
+    height: 26.2em;
+    left: 34.05em;
+    top: 50.3em;
+}
+
+#blok2{
+    position: relative;
+}
+#text2{
+    position: absolute;
+    left: 34.05em;
+    top: 103.8em;
     text-align: right;
-
-}
-#blok3 p{
-    position: absolute;
-    width: 603px;
-    height: 542px;
-    left: 81px;
-    top: 3154px;
-    text-align: left;
 }
 #blok3{
+    position: relative;
+}
+#text3{
     position: absolute;
-    width: 531px;
-    height: 475px;
-    left: 847px;
-    top: 3154px;
+    left: 2.55em;
+    top: 157.7em; 
+    text-align: left;
+}
+#example{
+    width: 26.55em;
+    height: 23.75em;
+    left: 34.05em;
+    top: 157.7em;
 
-    background-image: url("Capture.png");
     border: 4px solid #000000;
     border-radius: 12px;
-
 }
-#blok4 p{
+#blok4{
+    position: relative;
+}
+#text4{
     position: absolute;
-    width: 1305px;
-    height: 248px;
-    left: 67px;
-    top: 4211px;
-
     text-align: center;
+    align-items: center;
 }
 #blok5{
+    position: relative;
+}
+#topic1{
     position: absolute;
-    width: 696px;
-    height: 716px;
-    left: 46px;
-    top: 4651px;
+    top: 234.2em;
+    left: 2.55em;
+    text-align: left;
+}
+#text5{
+    position: absolute;
+    left: 2.55em;
+    top: 244.15em;
+    text-align: left;
 }
 #blok6{
+    position: relative;
+}
+#topic2{
     position: absolute;
-    width: 712px;
-    height: 608px;
-    left: 690px;
-    top: 5055px;
+    top: 239.85em;
+    left: 34.05em;
+    text-align: right;
+}
+#text6{
+    position: absolute;
+    left: 34.05em;
+    top: 250.6em;
+    text-align: right;
 }
 .butt{
-    
-    position: absolute;
-    width: 452px;
-    height: 120px;
-    left: 464px;
-    top: 5684px;
-    background: #CFAB9C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-   
-    left: 15.93%;
-    right: 15.93%;
-    top: 21.67%;
-    bottom: 21.67%;
-
-    font-family: 'Inria Serif';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 49px;
-    line-height: 59px;
-    display: flex;
+    width: 14.3em;
+    height: 4.7em;
     align-items: center;
-    text-align: center;
-
-    color: #000000;
 }
 footer{
-    /* Component 9 */
-
-    position: absolute;
-    width: 1443px;
-    height: 448px;
-    left: 20px;
-    top: 5804px;
-
-
-
-    /* Polygon 1 */
-
-    position: absolute;
-    left: 0%;
-    right: 56.42%;
-    top: 0%;
-    bottom: 39.73%;
-
-    background: #E0C4B8;
-
-
-    /* Rectangle 7 */
-
-    position: absolute;
-    left: 0.13%;
-    right: 0%;
-    top: 17.86%;
-    bottom: 33.26%;
-
-    background: #CFAB9C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
-    /* Rectangle 8 */
-
-    position: absolute;
-    left: 0.13%;
-    right: 0%;
-    top: 57.14%;
-    bottom: 0%;
-
-    background: #B09488;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    width: 64em;
+    height: 22.4em;
+    background-image: url("component/Component 9.png");
+    background-size: cover; /* Забезпечить адаптивний розмір фонового зображення */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 footer #email{
-    position: absolute;
+    
     left: 56px;
     top: 120px;
     font-family: 'Inria Serif';
@@ -213,20 +156,19 @@ footer #email{
     color: #000000;
 }
 footer #list1{
-    position: absolute;
+    
     left: 56px;
     top: 224px;
     font-family: 'Inria Serif';
     font-style: normal;
     font-size: 40px;
     display: flex;
-    align-items: center;
     text-align: center;
     color: #000000;
 }
 #moon{
     /* Component 8 */
-    position: absolute;
+    
     width: 248px;
     height: 153px;
     left: 170px;
@@ -235,7 +177,7 @@ footer #list1{
 }
 #twostar{
     /* Component 4 */
-    position: absolute;
+    
     width: 150px;
     height: 101px;
     left: 1124px;
@@ -244,7 +186,7 @@ footer #list1{
 }
 #stars{
     /* Component 5 */
-    position: absolute;
+    
     width: 176px;
     height: 120px;
     left: 147px;
@@ -253,7 +195,7 @@ footer #list1{
 }
 #starcloud{
     /* Component 7 */
-    position: absolute;
+    
     width: 298px;
     height: 179px;
     left: 964px;
@@ -261,7 +203,7 @@ footer #list1{
 }
 #clouds{
     /* Component 6 */
-    position: absolute;
+    
     width: 324px;
     height: 241px;
     left: 256px;
@@ -269,7 +211,6 @@ footer #list1{
 }
 #fallstar{
     /* falling star */
-    position: absolute;
     width: 336px;
     height: 235px;
     left: 889px;
